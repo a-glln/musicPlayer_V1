@@ -13,8 +13,6 @@
       @selecttrack="selectTrack"
       @playtrack="play">
       </player-playlist-panel>
-      <v-spacer></v-spacer>
-      <router-view></router-view>
     </v-navigation-drawer>
     <!-- TitleBar -->
     <player-info-panel
@@ -44,8 +42,6 @@
   import PlayerControlsBars from './components/PlayerControlsBars.vue'
   import PlayerInfoPanel from './components/PlayerInfoPanel.vue'
   import PlayerSearchBar from './components/PlayerSearchBar'
-  import ArtistePage from './components/ArtistPage'
-  import VueRouter from 'vue-router'
 
   export default {
     components: {
@@ -53,7 +49,6 @@
       PlayerControlsBars,
       PlayerInfoPanel,
       PlayerSearchBar,
-      ArtistePage
     },
     data () {
       return {

@@ -26,22 +26,6 @@ Vue.filter('minutes', (value) => {
   return value
 })
 
-const router = new VueRouter({
-  mode: 'history',
-
-  routes: [{ 
-    path: '/', 
-    component: App 
-  },
-  { 
-    path: '/artist', 
-    component: ArtistePage 
-  },{
-    path:'*',
-    redirect: '/'
-  }]
-})
-
 new Vue({
   el: '#app',
   render: h => h(App)
